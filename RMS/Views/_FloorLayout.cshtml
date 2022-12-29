@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <img src="~/Images/Adminpic.jpg" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/Home/Index">Home</a>
+                <a href="/State/Index">ReserveTable</a>
+                <a href="/City/Index">UploaddOrder</a>
+                <a href="/City/Index">CancelOrder</a>
+                <a href="/City/Index">CheckOrderStatus</a>
+                <a href="/City/Index">GenerateBill</a>
+                <a href="/Home/Logout">Logout</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @RenderBody()
+            </td>
+        </tr>
+        <tr>
+            <td>copyrights-2022</td>
+        </tr>
+    </table>
+</body>
+</html>

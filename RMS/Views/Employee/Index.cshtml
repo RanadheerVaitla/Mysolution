@@ -1,0 +1,20 @@
+﻿@model BusinessObjects.Employee
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Index","Employee",FormMethod.Post))
+{
+    @Html.Label("Enter No")
+    @Html.TextBoxFor(model => model.Eno)<br />
+    @Html.Label("Enter Ename")
+    @Html.TextBoxFor(model => model.Ename)<br />
+    @Html.Label("Enter Salary")
+    @Html.TextBoxFor(model => model.Salary)<br />
+    <input type="submit" value="Save"/>
+}
+

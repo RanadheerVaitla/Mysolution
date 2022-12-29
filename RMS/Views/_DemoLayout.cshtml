@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+
+                    <img src="~/Images/Bawarchipic.png" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/Home/Index">Home</a>
+                    <a href="/Home/Aboutus">Aboutus</a>
+                    <a href="/Home/Contactus">Contactus</a>
+                    <a href="/Home/Login">Login</a>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @RenderBody()
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    copyrights-2022
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

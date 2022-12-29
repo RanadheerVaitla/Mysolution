@@ -1,0 +1,18 @@
+﻿@model BusinessObjects.Login
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_DemoLayout.cshtml";
+}
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    @Html.Label("Enter Name")
+    @Html.TextBoxFor(model=>model.UserName)
+    <br />
+    @Html.Label("Enter Password")
+    @Html.TextBoxFor(model=>model.Password)
+    <br />
+    <input type="submit" value="Signin"/>
+}
+

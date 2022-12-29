@@ -1,0 +1,24 @@
+﻿@model IEnumerable<BusinessObjects.Employee>
+
+@{
+    ViewBag.Title = "GetEmp";
+    Layout = "~/Views/_AdminLayout.cshtml";
+}
+
+<h2>GetEmp</h2>
+
+<table>
+    <tr>
+        <th>ENO</th>
+        <th>Ename</th>
+        <th>Salary</th>
+    </tr>
+    @foreach (var item in TempData["ie"] as IEnumerable<BusinessObjects.Employee>)
+    {
+    <tr>
+        <td>@item.Eno</td>
+        <td>@item.Ename</td>
+        <td>@item.Salary</td>
+    </tr>
+    }
+</table>
