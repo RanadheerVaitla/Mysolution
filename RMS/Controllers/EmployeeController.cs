@@ -35,7 +35,7 @@ namespace RMS.Controllers
             ServiceLayer.Employee objsaemp = new ServiceLayer.Employee();
             var employees = objsaemp.GetEmp();
             return employees;
-
+            
         }
     }
 }
